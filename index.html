@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+    body { background: url('images/bg-desktop.svg'); background-color: hsl(257, 40%, 49%)}
+    .flex-container {display: flex; padding: 0 70px; justify-content: center; align-items: center;}
+    .side-content h1 {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 40px;
+      margin-bottom: -3px;
+    }
+    .side-content {
+      padding-left: 40px;
+      height: 450px;
+    }
+    .side-content p {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 15px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    button {
+      margin-top: 15px;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      color: hsl(228, 45%, 44%);
+      height: 50px;
+      width: 200px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      box-shadow: black 5px 5px 30px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: hsl(300, 69%, 71%);
+      color: white;
+    }
+    .logo {
+      margin-left: 70px;
+      padding: 20px 0;
+    }
+    @media screen and (max-width: 375px) { 
+
+      .body {background: url('images/bg-mobile.svg');}
+      .flex-container {
+        flex-direction: column;
+        padding: 0 20px;
+      }
+
+      .illustration img {
+        width: 100%;
+      }
+
+      .side-content h1 {
+        font-size: 25px;
+      }
+      .logo {
+        width: 100%;
+        margin: 0 20px;
+      }
+      .logo img{
+        width: 30%;
+      }
+      .side-content {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/logo.svg" width="15%">
+  </div>
+
+  <main class="flex-container">
+
+    <section class="prototype">
+
+      <div class="illustration">
+        <img src="images/illustration-mockups.svg">
+      </div>
+
+    </section>
+    
+    <section class="side-content">
+
+      <h1>Build The Community Your Fans Will Love</h1>
+
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+      Create connections with your users as you engage in genuine discussion. 
+      </p>
+
+      <button>Register</button> 
+
+    </section>
+
+  </main>
+</body>
+</html>
